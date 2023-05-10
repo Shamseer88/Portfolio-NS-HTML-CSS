@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+} 
+.hero-bg {
+    height: 100vh;
+    width: 100vw;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+}
+.hero-heading{
+    position: absolute;
+    z-index: 5;
+    top: 3rem;
+    color: white;
+    font-size: 35px;
+}
+.intro {
+    font-weight: 400;
+    line-height: 1rem;
+}
+.intro-name {
+    font-size: 25px;
+    font-weight: 400;
+}
+.intro-description {
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+.black-box {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.black-box-heading{
+    font-size: 80px;
+    font-weight: 400;
+}
+.black-box-heading span{
+    font-size: 96px;
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width:340px;
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+}
+
+.card-image > img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card-content {
+   padding: 0.5rem; 
+}
+.card-header > h3 {
+    margin-bottom: 0.5rem;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 5rem;
+}
+.contact {
+    background-color: crimson;
+    padding: 2rem;
+    color: white;
+}
+
+.contact h3, .about h3 {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.about {
+    background-color: darkgreen;
+    padding: 2rem;
+    color: white;
+}
+
+@media screen and (max-width:786px) {
+    .hero-bg {
+        height: 50vh;
+    }
+    .black-box-heading, .black-box-heading span {
+        font-size: 24px;
+    }
+    .bottom {
+        gap: 0;
+    }
+}
